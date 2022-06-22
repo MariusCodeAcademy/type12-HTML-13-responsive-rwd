@@ -1,0 +1,40 @@
+header {
+  background-color: coral;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h2 {
+  margin-bottom: 0;
+}
+main {
+  grid-area: main;
+}
+nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside {
+  grid-area: aside;
+}
+footer {
+  background-color: coral;
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    'header header header'
+    'nav main aside'
+    'footer footer footer';
+  grid-template-rows: 80px auto 70px;
+}
