@@ -36,7 +36,7 @@
     background-color: darkorchid;
     grid-template-columns: 1fr;
   }
-  .post:last-child {
+  .posts .post {
     grid-column: span 1;
   }
   .container {
